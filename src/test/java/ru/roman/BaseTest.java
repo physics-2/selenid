@@ -12,6 +12,7 @@ import java.util.List;
 
 
 public class BaseTest {
+    /*
 
     WebDriver webDriver;
     WebDriverWait webDriverWait;
@@ -93,4 +94,6 @@ public class BaseTest {
         By state5Locator = By.xpath(selector);
         webDriver.findElement(state5Locator).click();
     }
+
+     */
 }

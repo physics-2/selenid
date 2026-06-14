@@ -14,6 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 @Epic("Обучение allure")
 @Feature("TextBox")
 public class TextboxTest {
+
     public static void setup(){
         Configuration.browser = "chrome";
         Configuration.browserSize = "920x180";
@@ -38,7 +39,6 @@ public class TextboxTest {
         $("#output").shouldHave(text("Test"));
 
         SelenideElement element = $("#output");
-        $("#").uploadFile();
         System.out.println(element.getText());
         System.out.println(element.getValue());
         $x("//input[@id='userName']").setValue("Test2");
@@ -53,4 +53,6 @@ public class TextboxTest {
 
         $("#userName").setValue(username);
     }
+
+
 }

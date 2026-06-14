@@ -21,6 +21,8 @@ public class Weather {
     public void getWeather(){
         open("https://world-weather.ru/pogoda/russia/saint_petersburg/14days/#2026-06-07");
 
+
+
         for (int i = 7; i < 7 + 14 ; i++) {
             String date = String.format("2026-06-%02d", i);
             System.out.println(getDayAndNightDataByDate(date));
